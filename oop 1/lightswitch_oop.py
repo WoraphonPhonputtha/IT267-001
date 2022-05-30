@@ -10,7 +10,7 @@ class LightSwitch():
         self.switch_status = False
 
     def show(self):
-        print(f'Status = {self.switch_status}')
+        print(f"Status = {self.switch_status}")
 
 #สร้างวัตถุ (Object) จากแม่พิมพ์ (Class)
 switch_obj = LightSwitch()
