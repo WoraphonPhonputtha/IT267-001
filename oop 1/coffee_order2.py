@@ -47,7 +47,7 @@ class CoffeeOrder:
     def display_detail(self):
         self.check_menu()
         self.compute_price()
-        return f'{self.customer_name}, {self.menu} ({self.num}{self.size} * ${self.price} -> ${CoffeeOrder.total})'
+        return f'{self.customer_name}, {self.menu} ({self.num}{self.size} * ${self.price}) -> ${CoffeeOrder.total}'
     
     def __del__(self):
         print(f'Object was destroyed')
