@@ -3,9 +3,17 @@ from temperature import Temperature
 
 class Country(Geographic,Temperature):
     def __init__(self,name,area,pop) -> None:
+        #super().__init__()
+        Geographic.__init__(self)
+        Temperature.__init__(self)
         self.name = name
         self.area = area
         self.population = pop
+        #ถ้าใช้ super ในวงเล็บไม่ต้องมีอะไรเลยแต่ถ้าใช้ class ต้องมี self เสมอ
+    """def __init__(self,name,area,pop) -> None:
+        self.name = name
+        self.area = area
+        self.population = pop"""
     
     def getpopulationdensity(self):
         return self.population / self.area
